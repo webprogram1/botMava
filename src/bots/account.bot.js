@@ -71,7 +71,6 @@ async function runAccountAndEngagementBot(postsPerRun = 3, delayBetween = 2000) 
 
   const browser = await puppeteer.launch({
     headless: true,
-    executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
@@ -208,3 +207,4 @@ async function runAccountAndEngagementBot(postsPerRun = 3, delayBetween = 2000) 
 }
 
 module.exports = runAccountAndEngagementBot;
+
